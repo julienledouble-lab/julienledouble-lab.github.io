@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      # npm install plutôt que npm ci : le lockfile généré sous Windows omet des dépendances
+      # optionnelles Linux (@emnapi/*, bug npm connu), que npm install complète.
+      - run: npm install --no-audit --no-fund
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run build
