@@ -57,6 +57,7 @@ export const formations = {
   others: [
     { period: "2012", title: "BTS Assistance Technique d’Ingénieur", note: "Des bases techniques au service de la conception et du prototypage." },
     { period: "2010", title: "Bac professionnel Électrotechnique", note: "Le socle de mes projets électroniques, comme le Post-it intelligent.", minor: true },
+    { period: "2008", title: "BEP Électrotechnique", note: "Lycée Passy-Buzenval, Rueil-Malmaison.", minor: true },
   ],
 };
 
