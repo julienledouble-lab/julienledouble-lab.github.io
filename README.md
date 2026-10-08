@@ -51,7 +51,7 @@ Sous Windows, Chrome installé est utilisé par défaut. Sur Linux/macOS, instal
 
 Modifier `src/data/profile.ts` : `name`, `initials`, `email`, `phone`, `linkedin`, `github`, formation et disponibilité.
 
-CV : la source est `cv/cv.html` ; `npm run cv` génère `public/cv.pdf` (une page A4, via Chrome), puis relancer `npm run build`. Les liens « CV » (navigation, contact, CTA final) apparaissent automatiquement dès que le fichier existe (`src/lib/assets.ts`) ; tant qu’il manque, aucun lien cassé n’est affiché.
+CV : le PDF publié est `public/cv.pdf` ; pour le mettre à jour, remplacer ce fichier puis relancer `npm run build`. Une version HTML alternative existe dans `cv/cv.html` (`npm run cv` la convertit en `cv/cv-genere.pdf`, sans toucher au CV publié). Les liens « CV » (navigation, contact, CTA final) apparaissent automatiquement dès que le fichier existe (`src/lib/assets.ts`) ; tant qu’il manque, aucun lien cassé n’est affiché.
 
 Les textes de présentation et les étapes du parcours se trouvent dans `src/data/profile.ts`. Les données des compétences et du processus sont dans `src/data/profile.ts`.
 
@@ -112,7 +112,7 @@ Le site est publié par la GitHub Action `.github/workflows/deploy.yml` à chaqu
 
 Avant de pousser :
 
-1. `npm run cv` si le CV a changé.
+1. Remplacer `public/cv.pdf` si le CV a changé.
 2. `npm run lint`, `npm run typecheck`, `npm run build`, puis `npm test`.
 3. Pousser sur `main` et suivre le déploiement dans l’onglet **Actions**.
 

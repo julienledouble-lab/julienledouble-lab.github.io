@@ -21,3 +21,4 @@ CLAUDE.md
 .claude/
 # Originaux lourds (PNG, portrait d'origine, ancien CV) : seules les versions de public/ sont publiées.
 assets-src/
+cv/cv-genere.pdf
