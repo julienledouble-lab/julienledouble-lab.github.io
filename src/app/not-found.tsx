@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <section className="shell page-hero not-found"><p className="eyebrow">404 / HORS PARCOURS</p><h1>Cette page reste<br /><span className="serif">à imaginer.</span></h1><p className="page-lead">Le lien n’existe pas ou la page a été déplacée.</p><Link href="/" className="button button-dark mt-8">Revenir à l’accueil <span aria-hidden="true">↗</span></Link></section>; }

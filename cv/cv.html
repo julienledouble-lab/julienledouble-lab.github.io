@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>CV — Julien Ledouble · Product Builder · UX/UI · IA</title>
+<!-- Source du CV. Générer le PDF : npm run cv (écrit public/cv.pdf). -->
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #151e2d; --ink: #1f2633; --muted: #5d6677; --line: #d5dbe6; --accent: #2f55c8; --side: #eef1f6; --pale: #a9c7ff; }
+  html, body { width: 210mm; height: 297mm; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; color: var(--ink); font-size: 8.1pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+  header { background: var(--navy); color: #fff; display: grid; grid-template-columns: 30mm 1fr; gap: 8mm; align-items: center; padding: 6.5mm 14mm 6.5mm 12mm; }
+  header img { width: 30mm; height: 30mm; border-radius: 50%; object-fit: cover; object-position: center 18%; border: 2.5px solid var(--pale); }
+  header h1 { font-size: 25pt; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+  header .role { color: var(--pale); font-size: 10.5pt; letter-spacing: .12em; margin-top: 2mm; font-weight: 600; }
+  header .tagline { color: #c9d3e3; font-size: 8.8pt; margin-top: 3mm; padding-top: 2.5mm; border-top: 1px solid #34435d; }
+  .body { display: grid; grid-template-columns: 62mm 1fr; }
+  aside { background: var(--side); padding: 6mm 6mm 5mm 10mm; }
+  main { padding: 6mm 12mm 5mm 8mm; }
+  h2 { font-size: 8pt; letter-spacing: .16em; text-transform: uppercase; color: var(--navy); font-weight: 700; padding-bottom: 1.6mm; border-bottom: 1px solid var(--line); margin-bottom: 2.3mm; }
+  section + section { margin-top: 4mm; }
+  .contact li { list-style: none; margin-bottom: 1.1mm; color: var(--ink); word-break: break-word; }
+  .contact span { display: block; color: var(--muted); font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; }
+  .edu { margin-bottom: 2.1mm; }
+  .edu strong { display: block; font-size: 8.6pt; }
+  .edu small { color: var(--muted); font-size: 7.6pt; display: block; }
+  .edu.main strong { color: var(--accent); }
+  .badge { display: inline-block; font-size: 6.4pt; letter-spacing: .1em; font-weight: 700; background: var(--accent); color: #fff; padding: .4mm 1.6mm; border-radius: 1mm; margin-left: 1mm; vertical-align: middle; }
+  .skill-group { margin-bottom: 1.9mm; }
+  .skill-group strong { display: block; font-size: 8pt; margin-bottom: .6mm; }
+  .skill-group p { color: var(--muted); font-size: 7.7pt; }
+  .dots li { list-style: none; position: relative; padding-left: 3mm; margin-bottom: .8mm; }
+  .dots li::before { content: ""; position: absolute; left: 0; top: 1.7mm; width: 1.3mm; height: 1.3mm; border-radius: 50%; background: var(--accent); }
+  .profile { color: var(--ink); }
+  .item { margin-bottom: 2.6mm; }
+  .item-head { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+  .item-head strong { font-size: 9.3pt; }
+  .item-head time { color: var(--muted); font-size: 7.6pt; white-space: nowrap; }
+  .meta { color: var(--accent); font-size: 7.7pt; font-style: italic; margin: .3mm 0 1mm; }
+  .item p { color: var(--muted); }
+  .item ul { margin-top: .6mm; }
+  .item ul li { list-style: none; position: relative; padding-left: 3.2mm; color: var(--muted); margin-bottom: .5mm; }
+  .item ul li::before { content: "–"; position: absolute; left: 0; color: var(--accent); }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6mm; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <img src="../public/profile/portrait.webp" alt="Portrait de Julien Ledouble">
+    <div>
+      <h1>Julien Ledouble</h1>
+      <p class="role">PRODUCT BUILDER · UX/UI · IA</p>
+      <p class="tagline">Imaginer des produits. Les concrétiser. — Alternance ou emploi</p>
+    </div>
+  </header>
+  <div class="body">
+    <aside>
+      <section>
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li><span>Email</span><a href="mailto:julienledouble@gmail.com">julienledouble@gmail.com</a></li>
+          <li><span>Téléphone</span>06 26 48 18 01</li>
+          <li><span>Portfolio</span><a href="https://julienledouble-lab.github.io/">julienledouble-lab.github.io</a></li>
+          <li><span>LinkedIn</span><a href="https://linkedin.com/in/julien-ledouble">linkedin.com/in/julien-ledouble</a></li>
+          <li><span>GitHub</span><a href="https://github.com/julienledouble-lab">github.com/julienledouble-lab</a></li>
+          <li><span>Localisation</span>Le Vésinet (78), Île-de-France</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Formation</h2>
+        <div class="edu main"><strong>Prépa Mastère Digital <span class="badge">EN COURS</span></strong><small>HETIC, Montreuil · 2025–2026</small></div>
+        <div class="edu"><strong>BTS Assistance Technique d’Ingénieur</strong><small>Lycée Passy-Buzenval, Rueil-Malmaison · 2012</small></div>
+        <div class="edu"><strong>Bac pro Électrotechnique</strong><small>Lycée Passy-Buzenval, Rueil-Malmaison · 2010</small></div>
+      </section>
+      <section>
+        <h2>Compétences</h2>
+        <div class="skill-group"><strong>Produit & UX/UI</strong><p>Figma · parcours utilisateurs · définition de fonctionnalités · MVP · prototypage</p></div>
+        <div class="skill-group"><strong>IA & prototypage</strong><p>Claude Code · Codex · développement assisté par IA</p></div>
+        <div class="skill-group"><strong>Applications & web</strong><p>Flutter (prototypage assisté par IA) · HTML/CSS (bases) · Supabase</p></div>
+        <div class="skill-group"><strong>Objets & fabrication</strong><p>ESP32 · SolidWorks · impression 3D</p></div>
+        <div class="skill-group"><strong>Notions</strong><p>Python · Blender · Git/GitHub</p></div>
+      </section>
+      <section>
+        <h2>Langues</h2>
+        <ul class="dots"><li>Français</li><li>Anglais</li></ul>
+      </section>
+      <section>
+        <h2>Centres d’intérêt</h2>
+        <ul class="dots"><li>Voyages</li><li>Sports mécaniques</li><li>Informatique</li><li>Musique</li></ul>
+      </section>
+    </aside>
+    <main>
+      <section>
+        <h2>Profil</h2>
+        <p class="profile">Je conçois des produits numériques et connectés, de l’idée au prototype fonctionnel, en mêlant réflexion produit, UX/UI, IA et prototypage. Mon parcours a commencé sur le terrain (service client, direction d’une activité de transport premium, vente multimédia), avec un fil conducteur : comprendre un besoin, structurer une solution, la rendre concrète. J’utilise Claude Code et Codex pour accélérer l’implémentation, tout en gardant la maîtrise des choix produit et de la validation.</p>
+      </section>
+      <section>
+        <h2>Projets</h2>
+        <div class="item">
+          <div class="item-head"><strong>Impulsion — application mobile musique</strong><time>Cofondateur · Product Builder</time></div>
+          <p class="meta">React Native · Expo · Supabase · Figma · Claude Code · Codex</p>
+          <p>Plateforme pour aider les artistes à se rencontrer, collaborer, construire des projets et se connecter aux professionnels. Co-conçue avec Geoffrey Giovetti : étude de marché (33 premières réponses), fonctionnalités et MVP, parcours, maquettes haute fidélité et prototype mobile fonctionnel.</p>
+        </div>
+        <div class="item">
+          <div class="item-head"><strong>Post-it intelligent — objet connecté</strong><time>Conception produit · prototypage</time></div>
+          <p class="meta">ESP32 · écran e-paper · SolidWorks · impression 3D · Flutter</p>
+          <p>Post-it numérique autonome : 7 pages (météo, rappels, notes, images, recettes, courses, minuteur), deep sleep, backend Node.js et application Flutter de contrôle. Boîtier modélisé sous SolidWorks et imprimé en 3D.</p>
+        </div>
+        <div class="item">
+          <div class="item-head"><strong>PMF — sport & alimentation</strong><time>Définition produit · priorisation</time></div>
+          <p class="meta">Flutter · Gemini · implémentation assistée par IA</p>
+          <p>Prototype mobile de coaching : séances adaptées aux contraintes et au matériel disponible, plan alimentaire sur 7 jours et coach IA qui ajuste repas et séances.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Expériences professionnelles</h2>
+        <div class="item">
+          <div class="item-head"><strong>Conseiller de vente multimédia & resp. laboratoire photo</strong><time>Mai 2020 – Juin 2025</time></div>
+          <p class="meta">Auchan La Défense</p>
+          <ul>
+            <li>Conseil et accompagnement client : écoute, compréhension des besoins et personnalisation.</li>
+            <li>Valorisation des offres : planches tarifaires, vitrines et supports visuels.</li>
+            <li>Responsabilité du laboratoire photo, dont le réaménagement complet de l’espace.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head"><strong>Cofondateur & dirigeant</strong><time>Nov. 2015 – Sept. 2019</time></div>
+          <p class="meta">Altes-Service · transport premium 100 % électrique</p>
+          <ul>
+            <li>Création et direction d’un service de transport premium : structuration opérationnelle, recrutement et management d’équipe.</li>
+            <li>Communication et développement : identité en ligne, réseaux sociaux, site web, présence en salons.</li>
+            <li>Pilotage de la qualité de l’expérience client, des opérations terrain aux retours clients.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head"><strong>Chauffeur VTC</strong><time>Déc. 2014 – Oct. 2015</time></div>
+          <p class="meta">Liftycab · transport de personnes</p>
+          <ul><li>Service de conduite premium : ponctualité, rigueur et relation client.</li></ul>
+        </div>
+      </section>
+      <section>
+        <h2>Compétences transversales</h2>
+        <ul class="dots cols"><li>Relation client & communication</li><li>Gestion de projet & autonomie</li><li>Management & organisation</li><li>Sens de l’expérience utilisateur</li><li>Prise de décision</li><li>Curiosité & veille technologique</li></ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

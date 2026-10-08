@@ -1,0 +1,23 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+*.tmp.*
+.DS_Store
+Thumbs.db
+
+# Documents internes de travail : conservés en local, jamais publiés dans le dépôt public.
+ASSETS_NEEDED.md
+docs/
+AGENTS.md
+CLAUDE.md
+.claude/
+# Originaux lourds (PNG, portrait d'origine, ancien CV) : seules les versions de public/ sont publiées.
+assets-src/
